@@ -1,16 +1,30 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View,Text } from 'react-native';
 
 const Header = () => {
 
-const {textStyle} = styles;
+const {textStyle, viewStyle} = styles;
 
-  return <Text style={textStyle}> Albums! </Text>;
+  return (
+    <View style={viewStyle}>
+      <Text style={textStyle}> Albums! </Text>
+    </View>
+  );
 };
 
 const styles = {
+  viewStyle : {
+    backgroundColor : '#F0F0F0',
+    justifyContent : 'center',
+    alignItems : 'center',
+    height : 60,
+    paddingTop : 15,
+    shadowColor : '#000',
+    shadowOffset : {width : 0, height : 2},
+    shadowOpacity : 0.2
+  },
   textStyle : {
-    fontSize : 30
+    fontSize : 20
   }
 };
 
