@@ -1,10 +1,14 @@
-import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+/* Ranjithkumar Matheswaran */
 
+//Import
+import React from 'react';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header.js';
+
+//Create
 const App = () => (
-  <Text>Some text here </Text>
+  <Header />
 );
 
-//Render it to the device
-
+//Render it to device
 AppRegistry.registerComponent('albums', () => App);
